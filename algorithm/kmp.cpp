@@ -49,7 +49,7 @@ void get_next(String T, int *next) {
             // 当2个字符相同时，表示在模式串中前i个字符有j个字符前缀和后缀是一样的，所以next[i+1] = j + 1
             // next[j] 表示首尾重合串的长度 + 1，因为从重合部分之后开始比较
             // 这里 用 next[i + 1] = next[i] + 1; i++; j++; 也可以，没有下面简洁但容易理解
-            next[++i] = ++j; // 若pi = pj，则 next[j+1] = next[j] + 1; 这里卡了好久，我一直试图弄清next[i]与j的关系，实际上next[i]=1
+            next[++i] = ++j; // 若pi = pj，则 next[j+1] = next[j] + 1; 这里卡了好久，我一直试图弄清next[i]与j的关系，实际上很简单。耗时一天
         } else j = next[j]; // 否则，令j=next[j],回溯，因为j处失配，所以回溯到next[j]再尝试
     }
 }
