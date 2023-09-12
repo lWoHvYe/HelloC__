@@ -3,6 +3,7 @@
 
 #include <thread>
 #include <mutex>
+#include <unistd.h>
 
 // 共享资源和互斥锁
 int sharedCounter = 0;
@@ -49,6 +50,17 @@ int main() {
     // sharedCounter：这是一个变量，我们想要输出它的值。
     // << std::endl：std::endl 是一个用于插入换行符并刷新流的特殊符号。
     std::cout << "Final sharedCounter value: " << sharedCounter << std::endl;
+
+    pid_t pid;
+    pid = fork();
+    if (pid == 0) {
+        std::cout << "这是一个子进程" << std::endl;
+    } else if (pid > 0) {
+        std::cout << "这是一个父进程" << std::endl;
+        std::cout << "子进程id" << pid << std::endl;
+    } else {
+        std::cout << "创建进程失败" << std::endl;
+    }
 
     return 0;
 }
