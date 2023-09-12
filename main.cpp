@@ -52,7 +52,12 @@ int main() {
     std::cout << "Final sharedCounter value: " << sharedCounter << std::endl;
 
     pid_t pid;
+    // fork 函数在调用后，会返回不同的值，具体含义如下：
+    //如果 fork 返回值为0，表示当前代码在子进程中执行。这是因为在子进程中，fork 返回0，所以可以通过这个返回值来判断当前代码是否在子进程中执行。
+    //如果 fork 返回值大于0，表示当前代码在父进程中执行，同时返回值为子进程的进程ID（PID）。父进程通过检查 fork 返回值是否大于0 来区分自己是在父进程中执行。
+    //如果 fork 返回值为-1，表示创建子进程失败
     pid = fork();
+    // 当使用fork函数创建子进程后，子进程会继续执行fork函数调用之后的代码，而且父进程和子进程都会从fork函数调用后的位置开始执行。
     if (pid == 0) {
         std::cout << "这是一个子进程" << std::endl;
     } else if (pid > 0) {
