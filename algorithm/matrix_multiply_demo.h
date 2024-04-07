@@ -8,9 +8,8 @@
 
 
 class matrix_multiplication {
-
 };
 
-
+int cmm(int, int);
 
 #endif //HELLOC___MATRIX_MULTIPLICATION_H
