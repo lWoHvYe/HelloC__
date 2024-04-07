@@ -3,7 +3,7 @@
 //
 
 #include <cstdlib>
-#include "seq_list.h"
+#include "seq_list_demo.h"
 
 // n 是m的一个引用（reference），m 是被引用物（referent）。
 //  int m;
@@ -29,7 +29,10 @@ void InitList(SeqList &L) {
 }
 
 void InitList(SeqList *L) {
-    (*L).data = (int *) malloc(sizeof(ElemType) * InitSize); // init in C style
-    (*L).MaxSize = InitSize;
-    (*L).length = 0;
+//    (*L).data = (int *) malloc(sizeof(ElemType) * InitSize); // init in C style
+    L->data = (int *) malloc(sizeof(ElemType) * InitSize); // init in C style
+//    (*L).MaxSize = InitSize;
+    L->MaxSize = InitSize;
+//    (*L).length = 0;
+    L->length = 0;
 }
