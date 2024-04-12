@@ -7,7 +7,8 @@
 
 
 class max_sub_sum {
-
+public:
+    int MaxSubSum(int *Array, int left, int right);
 };
 
 

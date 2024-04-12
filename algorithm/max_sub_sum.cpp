@@ -6,7 +6,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-int MaxSubSum(int *Array, int left, int right) {
+int max_sub_sum::MaxSubSum(int *Array, int left, int right) {
     int sum = 0;
     int i;
     if (left == right) {

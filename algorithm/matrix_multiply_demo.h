@@ -8,8 +8,10 @@
 
 
 class matrix_multiplication {
+public:
+    int cmm(int n, int seq[]);
 };
 
-int cmm(int, int);
+
 
 #endif //HELLOC___MATRIX_MULTIPLICATION_H

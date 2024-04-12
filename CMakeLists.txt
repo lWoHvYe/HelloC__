@@ -7,5 +7,5 @@ add_executable(HelloC__ main.cpp seq_list_demo.h seq_list_demo.cpp algorithm/kmp
         algorithm/matrix_multiply_demo.h algorithm/matrix_multiply_demo.cpp
         demo.cpp
         demo.h
-        max_sub_sum.cpp
-        max_sub_sum.h)
+        algorithm/max_sub_sum.cpp
+        algorithm/max_sub_sum.h)

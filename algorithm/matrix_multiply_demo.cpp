@@ -8,7 +8,7 @@
 int cost[N][N];
 int trace[N][N];
 
-int cmm(int n, int seq[]) {
+int matrix_multiplication::cmm(int n, int seq[]) {
     int i, j, k, p;
     int tempCost;
     int tempTrace;
