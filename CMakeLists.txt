@@ -8,4 +8,6 @@ add_executable(HelloC__ main.cpp seq_list_demo.h seq_list_demo.cpp algorithm/kmp
         demo.cpp
         demo.h
         algorithm/max_sub_sum.cpp
-        algorithm/max_sub_sum.h)
+        algorithm/max_sub_sum.h
+        algorithm/o_z_package.cpp
+        algorithm/o_z_package.h)
