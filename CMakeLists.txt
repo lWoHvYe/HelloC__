@@ -12,4 +12,6 @@ add_executable(HelloC__ main.cpp seq_list_demo.h seq_list_demo.cpp algorithm/kmp
         algorithm/o_z_package.cpp
         algorithm/o_z_package.h
         algorithm/partial_package.cpp
-        algorithm/partial_package.h)
+        algorithm/partial_package.h
+        algorithm/n_queen.cpp
+        algorithm/n_queen.h)
