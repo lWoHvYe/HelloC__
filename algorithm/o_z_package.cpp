@@ -2,9 +2,9 @@
 // Created by lWoHvYe on 2024/4/12.
 //
 
-#include <opencl-c.h>
+#include "algorithm"
 #include "o_z_package.h"
-#include "stdio.h"
+#include <cstdio>
 
 
 void o_z_package::OneZeroPackage(int *v, int *w) {
@@ -16,7 +16,7 @@ void o_z_package::OneZeroPackage(int *v, int *w) {
     for (i = 1; i < ROWS; i++) {
         for (j = 0; j < COLS; j++) {
             if (j >= w[i]) {
-                f[i][j] = max(f[i - 1][j], f[i - 1][j - w[i]] + v[i]);
+                f[i][j] = std::max(f[i - 1][j], f[i - 1][j - w[i]] + v[i]);
             } else {
                 f[i][j] = f[i - 1][j];
             }
