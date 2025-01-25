@@ -14,4 +14,11 @@ add_executable(HelloC__ main.cpp seq_list_demo.h seq_list_demo.cpp algorithm/kmp
         algorithm/partial_package.cpp
         algorithm/partial_package.h
         algorithm/n_queen.cpp
-        algorithm/n_queen.h)
+        algorithm/n_queen.h
+        memory_order_seq_demo_1.cpp
+        memory_order_seq_demo_2.cpp
+        memory_order_seq_demo_3.cpp
+        memory_order_seq_demo_4.cpp
+        memory_order_seq_demo_5.cpp
+        memory_order_seq_demo_6.cpp
+        memory_order_seq_demo_6_1.cpp)
